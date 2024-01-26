@@ -1,0 +1,120 @@
+@font-face{
+    font-family: 'googleFont';
+    src: url('fonts/GoogleSans-Regular.ttf');
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "googleFont";
+}
+/* //////////////////////////////////////////////////////////////////////////// */
+/* nav bar  */
+body{
+    height: 100vh;
+}
+nav,.classroom_logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    padding: 10px 20px;
+    border-bottom: 1px solid #e1dbdb;
+}
+.profile_box,.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.classroom_logo img,.profile_image{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+
+}
+
+.profile_image{
+    border-radius: 50%;
+}
+.text_under{
+    text-decoration: none;
+    font-size: 23px;
+    color:#5f6376 ;
+}
+.nav_link{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    color:#5f6376;
+
+}
+.text_under:hover{
+    text-decoration: underline;
+    color: #5d8e44;
+}
+.nav_link:not(.text_under):hover{
+    background-color: #eff0f0;
+
+    border-radius: 50%;
+
+}
+.nav_link{
+    font-size: 25px;
+    display: inline-block;
+    cursor: pointer;
+
+}
+/* /* /////////////////////////////////////////////////////////////////////////// */
+
+/* Aside section */
+.aside{
+    width: 20vw;
+    border-right: 1px solid#e1dbdb;
+    height: 90vh;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    border-bottom:1px solid #e1dbdb;
+    padding: 10px 0px;
+}
+.active{
+    background-color: #e3eefd;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius:20px ;
+}
+.aside_link{
+    text-decoration: none;
+    padding: 5px 0px 10px 10px;
+    color: #3c4043;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    width:18vw ;
+}
+
+.text_icon{
+    padding-left: 30px;
+}
+.icon{
+    margin-left: 20px;
+}
+.selfmade_icon{
+    font-size:13px;
+    color: white;
+    line-height: 2rem;
+    width: 32px;
+    height: 32px;
+    margin-left: 16px;
+    background-color: #007b83;
+    border-radius: 50%;
+    text-align: center;
+}
+.aside_link:not(.active):hover{
+    background-color: #f6f6f6;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius:20px ;
+}
