@@ -7,65 +7,73 @@
     margin: 0;
     font-family: "googleFont";
 }
+body{
+    position: relative;
+}
 /* //////////////////////////////////////////////////////////////////////////// */
 /* nav bar  */
-body{
-    height: 100vh;
-}
-nav,.classroom_logo{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 nav{
     padding: 10px 20px;
     border-bottom: 1px solid #e1dbdb;
 }
-.profile_box,.logo{
+nav{
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
 }
-
-.classroom_logo img,.profile_image{
+.profile_image{
     width: 30px;
     height: 30px;
-    display: inline-block;
-
-}
-
-.profile_image{
     border-radius: 50%;
 }
 .text_under{
     text-decoration: none;
-    font-size: 23px;
-    color:#5f6376 ;
-}
-.nav_link{
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
-    color:#5f6376;
-
+    font-size: 24px;
+    color: #5f6368;
 }
 .text_under:hover{
     text-decoration: underline;
-    color: #5d8e44;
+    color:#1e8e3e ;
 }
-.nav_link:not(.text_under):hover{
-    background-color: #eff0f0;
-
-    border-radius: 50%;
-
+.profile_box{
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .nav_link{
-    font-size: 25px;
-    display: inline-block;
+    padding: 2px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.nav_link:hover{
+    background-color: #eff0f0;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 13rem;
+}
+.classroom_logo img{
+    width: 30px;
+    padding-right: 10px;
+    height: 30px;
     cursor: pointer;
+}
+.classroom_logo{
+    display: flex;
+    align-items: center;
 
 }
+
+
 /* /* /////////////////////////////////////////////////////////////////////////// */
 
 /* Aside section */
@@ -92,12 +100,12 @@ nav{
     font-weight: bold;
     display: flex;
     align-items: center;
-    font-size: 13px;
+    font-size: 14px;
     width:18vw ;
 }
 
 .text_icon{
-    padding-left: 30px;
+    padding-left: 20px;
 }
 .icon{
     margin-left: 20px;
@@ -115,6 +123,20 @@ nav{
 }
 .aside_link:not(.active):hover{
     background-color: #f6f6f6;
-    border-top-right-radius:20px ;
-    border-bottom-right-radius:20px ;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+.main{
+    display: flex;
+}
+.section{
+    display: flex;
+    align-items: start;
+    padding: 20px;
+}
+.help_icon{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
 }

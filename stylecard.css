@@ -1,0 +1,83 @@
+
+.card{
+    width: 300px;
+    border: 1px solid #dadce0;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.card:hover{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.42);
+}
+.box_1{
+    background-color:#009788 ;
+    padding: 10px;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.box_1 a{
+    text-decoration: none;
+    color :white;
+    font-size: 20px;
+}
+.box_1 a:hover{
+    text-decoration: underline ;
+}
+.card_icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+}
+.card_icon:hover{
+    background-color: #00000013;
+}
+a.sml_t{
+    font-size: 12px;
+    padding-bottom: 8px;
+}
+
+.empty_box{
+    background-color: white;
+    height: 150px;
+}
+.card_profile{
+    width: 70px;
+    height: 70px;
+    color: white;
+    background-color: #8d6e63;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -35px;
+    right: 20px;
+}
+.card footer{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    border-top:1px solid #dadce0;
+}
+.icons{
+    display: flex;
+}
+.icons span,.card_icon {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+
+}
+.icons span:hover{
+    background-color:#dadce0 ;
+}
